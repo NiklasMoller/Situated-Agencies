@@ -1,2 +1,2 @@
 # Situated-Agencies
-Collaboration with Academy of Music and Drama, Gothenburg
+Collaboration with Academy of Music and Drama, Gothenburg.
