@@ -24,6 +24,11 @@ app.get('/', function(req, res){
 
 app.use(express.static(path.join(__dirname, '/../client')));
 
+//Enabling static files in Hasselblad folder
+app.use(express.static(path.join(__dirname, '/../../Hasselblad-Unity')));
+app.get('/hasselblad', (req, res) => res.send('/../../Hasselblad-Unity/index.html'));
+
+
 //------------- MQTT PubSub
 /* Flespi - never used this one
 var client  = mqtt.connect('wss://mqtt.flespi.io',{
