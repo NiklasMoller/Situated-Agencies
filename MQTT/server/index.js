@@ -18,7 +18,11 @@ http.listen(port, function(){
 });
 
 app.get('/', function(req, res){
-    res.sendFile(path.join(__dirname + '/../client/index.html'));
+    res.sendFile(path.join(__dirname + '/../client/homepage/index.html'));
+});
+
+app.get('/sensors', function(req, res){
+    res.sendFile(path.join(__dirname + '/../client/sensors/index.html'));
 });
 
 
